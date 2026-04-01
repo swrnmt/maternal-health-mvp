@@ -13,7 +13,7 @@ a scary health claim on WhatsApp and didn't know what to believe.
 - Extracts specific health claims from the message
 - Searches real medical databases (WHO, NCBI, MoHFW)
 - Returns a cited verdict with severity and confidence score
-- Never hallucinates — says "insufficient evidence" when unsure
+- Minimizes hallucination using evidence grounding — says "insufficient evidence" when unsure
 
 ## ⚙️ Tech Stack
 - **Groq (Llama 3.3 70B)** — claim extraction + response generation
