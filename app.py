@@ -1,5 +1,6 @@
 import streamlit as st
 from pipeline.claim_extractor import extract_claims
+from pipeline.preprocessor import preprocess_input
 from pipeline.fact_checker import fact_check
 from pipeline.responder import generate_response
 
@@ -16,10 +17,10 @@ if st.button("Check Claim"):
         st.warning("Please enter a claim first.")
     else:
         with st.spinner("Analyzing..."):
-            claims = extract_claims(user_input)
-            results = fact_check(claims)
-            response = generate_response(results)
-
+                user_input = preprocess_input(user_input)
+                claims = extract_claims(user_input)
+                results = fact_check(claims)
+                response = generate_response(results)
         # Severity badge color
         severity_color = {
             "DANGEROUS": "🔴",
