@@ -27,14 +27,6 @@ Every response includes:
 - Confidence score (0-100%)
 - Cited sources (clickable URLs)
 
-## 🗺️ Roadmap
-- ✅ V1 — English MVP, live deployed
-- 🔄 V2 — OCR for image/screenshot uploads (Gemini Vision),
-          Multilingual support (Bhashini API, 22 Indian languages),
-          LangGraph agentic pipeline, RAG over WHO/MoHFW PDFs
-- 📋 V3 — WhatsApp integration (Twilio), evals with accuracy
-          numbers, PWA
-
 ## 🏥 Target Users
 Pregnant women, their families, ASHA workers, Anganwadi workers,
 community health volunteers — anyone navigating maternal health
